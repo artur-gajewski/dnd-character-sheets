@@ -1,12 +1,15 @@
 .options {
   display: flex;
   flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
   color: white;
   padding-top: 1em;
   border-bottom: 1px solid black;
   padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   background: #efefef;
 }
 
@@ -20,5 +23,18 @@
   .options, .options *
   {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .options {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 10px;
+    height: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }

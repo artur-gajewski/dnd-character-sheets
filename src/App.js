@@ -36,18 +36,15 @@ function App() {
 
     return (
       <>
-          <div className="options">
-              <button className="btn" onClick={onSaveCharacter}>Save character</button>
-              &nbsp;&nbsp;&nbsp;
-              <input id="characterId" />
-              &nbsp;&nbsp;&nbsp;
-              <button className="btn" onClick={onLoadCharacter}>Load character</button>
-              &nbsp;&nbsp;&nbsp;
-              <button className="btn" onClick={() => window.print()}>Print</button>
-              &nbsp;&nbsp;&nbsp;
-              <button className="btn" onClick={onClearCharacter}>Clear</button>
+              <div className="options">
 
-          </div>
+                  <button className="btn" onClick={onSaveCharacter}>Save character</button>
+                  <input id="characterId" />
+                  <button className="btn" onClick={onLoadCharacter}>Load character</button>
+                  <button className="btn" onClick={() => window.print()}>Print</button>
+                  <button className="btn" onClick={onClearCharacter}>Clear</button>
+              </div>
+
           <DnDCharacterStatsSheet character={character} onCharacterChanged={setCharacter} />
           <DnDCharacterSpellSheet character={character} onCharacterChanged={setCharacter}/>
           <DnDCharacterProfileSheet character={character} onCharacterChanged={setCharacter}/>
