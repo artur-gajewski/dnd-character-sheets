@@ -1,0 +1,24 @@
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 1em;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  background: #efefef;
+}
+
+.btn {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+@media print
+{
+  .options, .options *
+  {
+    display: none !important;
+  }
+}
